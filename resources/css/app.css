@@ -1,11 +1,50 @@
+@font-face {
+  font-family: Poppins;
+  font-style: bold;
+  font-weight: bold;
+  src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 @import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@source '../views';
 
 @theme {
+    --color-accent: #0099ff; 
+    --color-facebook: #3b5999;
+    --color-linkedin: #0077b5;
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+}
+body {
+    font-family: "Poppins";
+    @apply text-gray-800 /*"#040404"*/;
+}
+h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-medium pb-4;
+}
+h2 {
+    @apply text-xl md:text-2xl lg:text-3xl font-medium pb-3;
+}
+p {
+    @apply text-sm md:text-base
 }
