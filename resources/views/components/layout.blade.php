@@ -17,5 +17,6 @@
             </div>
         </footer>
     </div>
+    <x-body-scripts/>
 </body>
 </html>
