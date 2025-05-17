@@ -7,7 +7,7 @@
                 <p>{{ strtoupper($skill['name']) }}</p> 
             @endforeach
         </div>
-        <h3 class="text-(--color-accent) my-3 font-bold">_</h3>    
+        <div class="text-xl sm:text-2xl md:text-4xl text-(--color-accent) my-3 font-bold">_</div>    
         <div class="social-media-follow">
             <ul>
                 <li class="inline-block pr-1">
