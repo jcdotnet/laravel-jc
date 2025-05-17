@@ -2,6 +2,12 @@
     <div class="flex flex-1 flex-col items-center justify-center text-center">
         <h1>JOSÉ CARLOS ROMÁN RUBIO</h1>
         <h2 class="text-gray-400">Computer Engineer & Software Developer</h2>
+        <div id="typewriter" class="hidden">
+            @foreach ($skills as $skill)
+                <p>{{ strtoupper($skill['name']) }}</p> 
+            @endforeach
+        </div>
+        <h3 class="text-(--color-accent) my-3 font-bold">_</h3>    
         <div class="social-media-follow">
             <ul>
                 <li class="inline-block pr-1">

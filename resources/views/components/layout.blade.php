@@ -18,6 +18,10 @@
             </div>
         </footer>
     </div>
-    <x-body-scripts/>
+    <x-body-scripts>
+        @if ( request()->is('/') )
+            <script src="{{asset('scripts/typewriter.js')}}"></script>
+        @endif
+    </x-body-scripts>
 </body>
 </html>

@@ -7,3 +7,4 @@
 
   gtag('config', 'G-Y1QFDBV7BL');
 </script>
+{{ $slot }}
