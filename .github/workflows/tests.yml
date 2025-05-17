@@ -2,9 +2,8 @@ name: Tests
 
 on:
   push:
-    branches:
+    branches: 
       - master
-      - '*.x'
   pull_request:
   schedule:
     - cron: '0 0 * * *'
@@ -33,19 +32,27 @@ jobs:
           php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite
           coverage: none
-
+      
+      - name: Setup MySQL
+        uses: shogo82148/actions-setup-mysql@v1
+        with:
+          mysql-version: '8.0'
+        
+      - name: Connect MySQL  
+        run: mysql -h127.0.0.1 -uroot -e 'SELECT version()'
+      
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress
 
-      - name: Setup Node.js (added by jcdotnet)
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Install npm dependencies (jcdotnet)
+      - name: Install npm dependencies
         run: npm ci
 
-      - name: Build assets (jcdotnet, needed for the tests to pass)
+      - name: Build assets
         run: npm run build
 
       - name: Copy environment file
