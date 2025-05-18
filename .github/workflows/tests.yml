@@ -1,4 +1,4 @@
-name: Tests
+name: JC Website Test
 
 on:
   push:
@@ -38,8 +38,8 @@ jobs:
         with:
           mysql-version: '8.0'
         
-      - name: Connect MySQL  
-        run: mysql -h127.0.0.1 -uroot -e 'SELECT version()'
+      - name: Connect MySQL and create database  
+        run: mysql -h127.0.0.1 -uroot -e 'CREATE DATABASE IF NOT EXISTS example;'
       
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-interaction --no-progress
@@ -61,5 +61,8 @@ jobs:
       - name: Generate app key
         run: php artisan key:generate
 
+      - name: Run Migrations
+        run: php artisan migrate
+  
       - name: Execute tests
         run: php artisan test
