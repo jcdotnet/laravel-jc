@@ -8,8 +8,8 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div id="page-container" clasS="flex flex-col min-h-screen">
-        <div id="main-content" class="flex flex-1">
+    <div id="page-container">
+        <div id="main-content">
             {{$slot}}
         </div>
         <footer>
