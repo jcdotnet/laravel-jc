@@ -13,7 +13,7 @@ Route::get('/categories', function ( Request $request){
 });
 
 Route::get('/skills',function() {
-    $skills = App\Models\Category::all();
+    $skills = App\Models\Skill::all();
     return response()->json($skills);
 });
 
