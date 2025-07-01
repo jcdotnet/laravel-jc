@@ -17,13 +17,12 @@ class CategorySeeder extends Seeder
             ['slug' => 'uncategorized', 'name' => 'Uncategorized'],
             ['slug' => 'programming', 'name' => 'Programming Languages'],
             ['slug' => 'databases', 'name' => 'Databases'],
-            ['slug' => 'software', 'name' => 'Software Development'],
+            ['slug' => 'design', 'name' => 'Software Design'],
+            ['slug' => 'dev', 'name' => 'Software Development'],
             ['slug' => 'web', 'name' => 'Web Development'],
             ['slug' => 'desktop', 'name' => 'Desktop Development'],
             ['slug' => 'mobile', 'name' => 'Mobile App Development'],
             ['slug' => 'wordpress', 'name' => 'WordPress'],
-            ['slug' => 'ide', 'name' => 'IDEs & Code Editors'],
-            ['slug' => 'vcs', 'name' => 'Version Control'],
         ];
 
         foreach ($categories as $key => $category) {    
