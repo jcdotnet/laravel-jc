@@ -1,7 +1,7 @@
 <x-layout>
     <section class="flex h-screen flex-col items-center justify-center text-center">
         <h1>JOSÉ CARLOS ROMÁN RUBIO</h1>
-        <h2 class="text-gray-400">Computer Engineer & Software Developer</h2>
+        <h2 class="text-gray-400">Computer Scientist & Software Engineer</h2>
         <div id="typewriter" class="hidden">
             @foreach ($skills as $skill)
                 <p>{{ strtoupper($skill['name']) }}</p> 
