@@ -30,7 +30,19 @@ class SkillRestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'name' => ['string', 'required'],
+            'category_id' => ['required', 'numeric'],
+        ]);
+        $skill = new Skill;
+        $skill->name = $data['name'];
+        $skill->category_id = $data['category_id'];
+        $skill->save();
+
+        return response()->json([
+            'message' => 'The skill has been created successfully',
+            'skill' => $skill
+        ], 201);
     }
 
     /**
@@ -69,6 +81,10 @@ class SkillRestController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Skill::find($id)->delete();
+
+        return response()->json([
+            'message' => 'The skill has been deleted successfully'
+        ]);
     }
 }

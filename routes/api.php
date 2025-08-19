@@ -20,3 +20,5 @@ Route::get('/categories/slug/{slug}/skills',[CategoryRestController::class, 'sho
 Route::get('/skills', [SkillRestController::class, 'index']);
 Route::get('/skills/{id}', [SkillRestController::class, 'show']);
 Route::get('/skills/{id}/experiences', [SkillRestController::class, 'showWithExperiences']);
+Route::post('/skills', [SkillRestController::class, 'store']);
+Route::delete('/skills/{id}', [SkillRestController::class, 'destroy']);
