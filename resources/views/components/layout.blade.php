@@ -32,16 +32,16 @@
                     <!-- maybe to-do: dark mode switch here -->
                     <div class="nav-menu-buttons ml-auto flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <a href="https://www.facebook.com/jc11235" class="flex items-center pr-2" title="Follow on Facebook" target="_blank">
-                            <i class="fa-brands fa-square-facebook text-2xl sm:text-3xl text-(--color-facebook)"></i>
+                            <i class="fa-brands fa-square-facebook text-3xl text-(--color-facebook)"></i>
                         </a>
                         <a href="https://github.com/jcdotnet" class="flex items-center pr-2" title="GitHub" target="_blank">
-                            <i class="fa-brands fa-square-github text-2xl sm:text-3xl text-(--color-github)"></i>
+                            <i class="fa-brands fa-square-github text-3xl text-(--color-github)"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/romanrubio/" class="flex items-center pr-2" title="Follow on LinkedIn" target="_blank">
-                            <i class="fa-brands fa-linkedin text-2xl sm:text-3xl text-(--color-linkedin)"></i>
+                            <i class="fa-brands fa-linkedin text-3xl text-(--color-linkedin)"></i>
                         </a>
                         <a href="https://x.com/jcdev_" class="flex items-center pr-2" title="Follow on X" target="_blank">
-                            <i class="fa-brands fa-square-x-twitter text-2xl sm:text-3xl text-black"></i>
+                            <i class="fa-brands fa-square-x-twitter text-3xl text-black"></i>
                         </a>
                         <div class="nav-menu-button inset-y-0 flex items-center sm:hidden">
                             <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-2 focus:-outline-offset-1 focus:outline-(--color-accent)">
@@ -59,7 +59,7 @@
                 </div>
                 <div id="mobile-menu" hidden class="block sm:hidden">
                     <div class="space-y-1 px-2 pt-2 pb-3">
-                        <a href="/" class="{{request()->is('/') ? 'text-white bg-(--color-accent)':'text-gray-500'}} block rounded-md rounded-md px-3 py-2 text-base font-medium hover:bg-(--color-accent) hover:text-white">Home</a>
+                        <a href="/" class="{{request()->is('/') ? 'text-white! bg-(--color-accent)':'text-gray-500'}} block rounded-md rounded-md px-3 py-2 text-base font-medium hover:bg-(--color-accent) hover:text-white">Home</a>
                     </div>
                 </div>
             </nav>

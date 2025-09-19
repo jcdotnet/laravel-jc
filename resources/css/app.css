@@ -44,7 +44,7 @@ h2 {
     @apply text-xl md:text-2xl lg:text-3xl font-medium pb-3;
 }
 p {
-    @apply text-sm md:text-base;
+    @apply text-base;
 }
 a {
     @apply text-(--color-accent);
