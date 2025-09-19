@@ -38,7 +38,7 @@ html, body {
 }
 body {
     font-family: "Poppins";
-    @apply text-gray-800 /*"#040404"*/;
+    @apply text-gray-800 /*"#040404"*/ px-4;
 }
 h1 {
     @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold pb-4;

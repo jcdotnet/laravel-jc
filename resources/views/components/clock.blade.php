@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="105.762px" height="122.88px" viewBox="0 0 105.762 122.88" enable-background="new 0 0 105.762 122.88" xml:space="preserve">
     <g>
         <path 
