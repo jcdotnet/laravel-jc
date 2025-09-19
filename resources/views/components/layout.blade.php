@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="page-container">
-        <header class="border-b border-gray-300 min-h-[65px] tracking-wide relative z-50">
+        <header class="min-h-[65px] tracking-wide px-4 relative z-50">
             <!-- nav menu bg-color dark bg-gray-800
             menu items
             text-color (dark theme) gray-300
@@ -17,8 +17,7 @@
             text-color:hover accent
             bg-color (dark theme) bg-white/5
             -->
-            <nav class="nav-menu-wrapper relative mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    
+            <nav class="nav-menu-wrapper border-b border-gray-300 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="nav-menu relative flex h-16 items-center justify-between">
                     <div class="flex shrink-0 items-center">
                         <a href="/"> 
@@ -27,7 +26,7 @@
                     </div>    
                     <div class="nav-menu-items flex flex-1 items-center justify-center sm:items-stretch sm:justify-start hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-                            <a href="/" class="{{request()->is('/') ? 'text-white bg-(--color-accent)':'text-gray-500'}} rounded-md px-3 py-2 text-sm font-medium hover:bg-(--color-accent) hover:text-white">Home</a>
+                            <a href="/" class="{{request()->is('/') ? 'text-white! bg-(--color-accent)':'text-gray-500'}} rounded-md px-3 py-2 text-sm font-medium hover:bg-(--color-accent) hover:text-white">Home</a>
                         </div>  
                     </div>
                     <!-- maybe to-do: dark mode switch here -->

@@ -38,17 +38,21 @@ html, body {
 }
 body {
     font-family: "Poppins";
-    @apply text-gray-800 /*"#040404"*/ px-4;
-}
-h1 {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold pb-4;
+    @apply text-gray-800 /*"#040404"*/;
 }
 h2 {
     @apply text-xl md:text-2xl lg:text-3xl font-medium pb-3;
 }
 p {
-    @apply text-sm md:text-base
+    @apply text-sm md:text-base;
+}
+a {
+    @apply text-(--color-accent);
+}
+section {
+    @apply max-w-[1080] m-auto px-4 sm:px-8 lg:px-12;
 }
 .progress svg {
-    @apply size-16 sm:size-20 md:size-24 text-(--color-accent)
+    @apply size-16 sm:size-20 md:size-24 text-(--color-accent);
 }
+

@@ -1,40 +1,36 @@
 <x-layout>
     <section class="flex h-screen flex-col items-center justify-center text-center">
-        <h1>JOSÉ CARLOS ROMÁN RUBIO</h1>
-        <h2 class="text-gray-400">Computer Scientist & Software Engineer</h2>
+        <h1 class="text-4xl md:text-5xl font-extralight">
+            <span class="tracking-wider text-gray-400">Hello, I'm a</span>
+            <strong class="block font-extrabold py-2 md:py-5">
+                <span class="block">Computer Scientist</span> 
+                <span class="text-3xl">&</span>
+                <span class="block">Software Engineer</span>    
+            </strong> 
+        </h1>
+        <div class="text-3xl tracking-wide text-gray-400">who knows about</div>
         <div id="typewriter" class="hidden">
             @foreach ($skills as $skill)
                 <p>{{ strtoupper($skill['name']) }}</p> 
             @endforeach
         </div>
         <div class="text-2xl md:text-4xl text-(--color-accent) my-5 font-bold">_</div>    
-        <div class="social-media-follow">
-            <ul>
-                <li class="inline-block pr-1">
-                    <a href="https://www.facebook.com/jc11235" title="Follow on Facebook" target="_blank">
-                        <i class="fa-brands fa-square-facebook text-3xl text-(--color-facebook)"></i>
-                    </a>
-                </li>
-                <li class="inline-block pr-1">
-                    <a href="https://github.com/jcdotnet" title="GitHub" target="_blank">
-                        <i class="fa-brands fa-square-github text-3xl text-(--color-github)"></i>
-                    </a>
-                </li>
-                <li class="inline-block pr-1">
-                    <a href="https://www.linkedin.com/in/romanrubio/" title="Follow on LinkedIn" target="_blank">
-                        <i class="fa-brands fa-linkedin text-3xl text-(--color-linkedin)"></i>
-                    </a>
-                </li>
-                <li class="inline-block">
-                    <a href="https://x.com/jcdev_" title="Follow on X" target="_blank">
-                        <i class="fa-brands fa-square-x-twitter text-3xl text-black"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="progress flex flex-col items-center mt-10">
+    </section>
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Skilled Computer Scientist with expertise in software development and passionate about creating robust applications. 
+            Proficient in <strong>C++, C#, Java, PHP and JavaScript</strong>, 
+            while being able to easily switch to other programming languages if needed.
+        </p>
+    </section>
+    <section>
+        <div class="progress flex flex-col items-center my-10">
             <x-clock/>
             <h2>Website In Progress</h2>
+            <p>
+                Coming soon! In the meantime you can play <a href="https://minesweeper.josecarlosroman.com">minesweeper</a> :)
+            </p>
         </div>
     </section>
 </x-layout>
